@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/activity_const"
+                                             tools:context="com.asuscom.yangyinetwork.andstudy_02.ConstAcitivity"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/kakaoicon"
+        app:layout_constraintTop_toTopOf="@+id/guide_up"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toLeftOf="@+id/guide_right"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.46"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/kakaoicon"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toLeftOf="@+id/guide_right"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwd"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toLeftOf="@+id/guide_right"
+        app:layout_constraintHorizontal_bias="0.46"/>
+
+    <Button
+        android:text="로그인"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        tools:onClick="onClick2"
+        app:layout_constraintTop_toBottomOf="@+id/passwd"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"
+        app:layout_constraintRight_toLeftOf="@+id/guide_right"/>
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/autologin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"/>
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_autologin"
+        app:layout_constraintTop_toTopOf="@+id/autologin"
+        app:layout_constraintLeft_toRightOf="@+id/autologin"
+        tools:layout_editor_absoluteY="257dp"
+        tools:layout_editor_absoluteX="132dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="@+id/autologin"
+        app:layout_constraintRight_toLeftOf="@+id/guide_right"
+        app:layout_constraintLeft_toRightOf="@+id/text_autologin"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:text="누럴ㅇ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/autologin"
+        app:layout_constraintBottom_toTopOf="@+id/guide_down"
+        app:layout_constraintLeft_toRightOf="@+id/guide_left"
+        app:layout_constraintRight_toLeftOf="@+id/guide_right"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guide_left"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guide_right"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="346dp"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guide_left"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="38dp"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guide_up"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="51dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guide_down"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="460dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.9"/>
+
+</android.support.constraint.ConstraintLayout>

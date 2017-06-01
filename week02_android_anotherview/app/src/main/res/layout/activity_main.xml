@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--릴레이티브레이아웃: ? , 리니어레이아웃 버티컬은 수직으로 변해서 한줄에 하나만 -->
+<!--버티컬은 수직으로 변해서 한줄에 하나만 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.asuscom.yangyinetwork.andstudy_01.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/act1_text1"
+        android:text="Hello World!"/>
+
+
+    <Button
+        android:id="@+id/act1_btn1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/> <!--matchparent:기기 wrap: 50dp: -->
+</LinearLayout>
